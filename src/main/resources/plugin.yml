@@ -1,0 +1,4 @@
+name: AdvancementSharing
+version: '${project.version}'
+main: agjoku.avancementsharing.AdvancementSharing
+api-version: '1.21'
