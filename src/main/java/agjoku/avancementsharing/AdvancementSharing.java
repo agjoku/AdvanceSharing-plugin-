@@ -39,10 +39,6 @@ public class AdvancementSharing extends JavaPlugin implements Listener {
         advancementsTracked.add(advancementName);
         writeAdvancementToCsv(playerName, advancementName);
 
-        for (Player onlinePlayer : Bukkit.getOnlinePlayers()){
-            onlinePlayer.sendMessage(playerName + "が進捗" + advancementName + "を達成しました");
-        }
-
     }
 
     private void writeAdvancementToCsv(String playerName, String advancementName) {
