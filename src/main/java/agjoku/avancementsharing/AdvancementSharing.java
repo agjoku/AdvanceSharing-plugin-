@@ -1,8 +1,5 @@
 package agjoku.avancementsharing;
 
-
-import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerAdvancementDoneEvent;
@@ -23,6 +20,9 @@ public class AdvancementSharing extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
+        if (!getDataFolder().exists()) {
+            getDataFolder().mkdirs();
+        }
         // プラグインが有効化されたときにリスナーを登録します
         getServer().getPluginManager().registerEvents(this, this);
     }
