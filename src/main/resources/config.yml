@@ -1,0 +1,4 @@
+#指定したパスへ出力できます。(１箇所だけ)
+#プラグインのデータフォルダにはパスを指定しても必ず生成されるようになっています。
+#絶対パス使えます。/advancements.csvはつけてください。
+csv-output-path : plugins/AdvancementSharing/advancements.csv
